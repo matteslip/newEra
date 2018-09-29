@@ -2,59 +2,82 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Quick hummus recipe</title>
+
+    <title>My page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- следующие 3 строки нужны для корректного отображения семантических элементов HTML5 в старых версиях Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
   </head>
+
   <body>
-    <span style="font-size: 32px; margin: 21px 0;">Is this a top level heading?</span>
-    <h1 id="Test">Quick hummus recipe</h1>
+    <!-- Вот наш главный заголовок, который используется на всех страницах нашего веб-сайта -->
 
-  <p>This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.</p>
+    <header>
+      <h1>Header</h1>
+    </header>
 
-    <p>Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.</p>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
-    <h2>Ingredients</h2>
-<ul>
-    <li>1 can (400g) of chick peas (garbanzo beans)</li>
-    <li>175g of tahini</li>
-    <li>6 sundried tomatoes</li>
-    <li>Half a red pepper</li>
-  <li> A pinch of cayenne pepper</li>
-  <li> 1 clove of garlic</li>
-  <li> A dash of olive oil</li>
-</ul>
-    <h2 >Instructions</h2>
-<ol>
-    <li>Remove the skin from the garlic, and chop coarsely</li>
-    <li>Remove all the seeds and stalk from the pepper, and chop coarsely</li>
-    <li>Add all the ingredients into a food processor</li>
-  <li>  Process all the ingredients into a paste.</li>
-  <ul>
-      <li>If you want a coarse "chunky" hummus, process it for a short time.</li>
-      <li>If you want a smooth hummus, process it for a longer time.</li>
-    </ul>
-  <li>  If you want a coarse "chunky" hummus, process it for a short time</li>
-    <li>If you want a smooth hummus, process it for a longer time</li>
-</ol>
-    <p>For a different <a title="{Хабр}" href="https://habr.com/top/">flavour, you</a> could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.</p>
+       <!-- Форма поиска - это еще один распространенный нелинейный способ навигации по веб-сайту. -->
 
-    <h3>Storage</h3>
+       <form>
+         <input type="search" name="q" placeholder="Search query">
+         <input type="submit" value="Go!">
+       </form>
+     </nav>
 
-    <p>Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it.</p>
+    <!-- Здесь основное содержимое нашей страницы -->
+    <main>
 
-    <p><i>Hummus</i> is suitable for freezing; you should thaw it and use it within a couple of months.</p>
-    <p>I am <em>glad</em> you weren't <em>late</em>.</p>
-    <h1>Important notice</h1>
+      <!-- Она содержит статью -->
+      <article>
+        <h2>Article heading</h2>
 
-    <p>On Sunday January <a href="#Test"<b>9th 2010</b></a>, a gang of goths were
-    spotted <strong>stealing</strong> several garden gnomes from a shopping
-    center in downtown <i>Milwaukee</i>. <em>They</em> were all <span>wearing green</span>
-    jumpsuits and silly hats, and seemed to be having a whale
-    of a time. If anyone has any information about this
-    <p>Я создал ссылку на
-  <a href="https://www.mozilla.org/ru/"
-     title="Лучшее место для поиска дополнительной информации
-     о миссии Mozilla и о том, как внести свой вклад">домашнюю страницу Mozilla
-  </a>.
-</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+        <h3>subsection</h3>
+
+        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+
+        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+
+        <h3>Another subsection</h3>
+
+        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+
+        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+      </article>
+
+      <!-- Дополнительный контент также может быть вложен в основной контент -->
+      <aside>
+        <h2>Related</h2>
+
+        <ul>
+          <li><a href="#">Oh I do like to be beside the seaside</a></li>
+          <li><a href="#">Oh I do like to be beside the sea</a></li>
+          <li><a href="#">Although in the North of England</a></li>
+          <li><a href="#">It never stops raining</a></li>
+          <li><a href="#">Oh well...</a></li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <!-- И вот наш главный нижний колонтитул, который используется на всех страницах нашего веб-сайта -->
+
+    <footer>
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+
   </body>
 </html>
